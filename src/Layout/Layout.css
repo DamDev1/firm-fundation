@@ -1,0 +1,7 @@
+.layout-container{
+    display: flex;
+}
+
+.layout-container .main{
+    width: 100%;
+}
