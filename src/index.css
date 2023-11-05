@@ -16,8 +16,9 @@ input {
 
 .sidebar {
   background: rgba(20, 35, 138, 1);
-  width: 20%;
+  width: 15rem;
   height: 100vh;
+  transition: 0.5s;
 }
 
 .sidebar .top {
@@ -41,11 +42,59 @@ input {
   border-bottom: 1px solid rgba(226, 225, 225, 0.192);
 }
 
+.toggle{
+  cursor: pointer;
+}
+
 .sidebar .sidebar-links span a {
+  transition: 0.5s;
   color: white;
   text-decoration: none;
 }
 
+.active-sidebar{
+  background: rgba(20, 35, 138, 1);
+  width: 4.5rem;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+.active-sidebar .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(214, 10, 11, 1);
+  padding: 1rem;
+}
+
+.active-sidebar .sidebar-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.active-sidebar .top .logo{
+  display: none;
+}
+
+.active-sidebar .sidebar-links span {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(226, 225, 225, 0.192);
+}
+
+
+.active-sidebar .sidebar-links span a{
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/* -------------------------------HEADER STYLE  */
 header nav {
   display: flex;
   justify-content: space-between;
@@ -82,4 +131,22 @@ header nav .nav-right .user .userProfile {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
+}
+
+
+
+@media(max-width: 390px){
+  header nav{
+    padding: 0;
+    height: 4rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  header nav .nav-left {
+  }
+
+  header nav .nav-right {
+    gap: 10px;
+  }
 }

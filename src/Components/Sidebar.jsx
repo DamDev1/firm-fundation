@@ -3,22 +3,24 @@ import { NavLink } from 'react-router-dom';
 
 export default function Sidebar() {
     const [changeToggle, setChangeToggle] = useState(false);
+    const [changeNavBar, setChangNavBar] = useState(false)
 
     const change = () => {
         setChangeToggle(!changeToggle); // Toggle the state
+        setChangNavBar(!changeNavBar)
     };
 
     return (
-        <div className='sidebar'>
+        <div className={changeNavBar ? "sidebar" : "active-sidebar"}>
             <div className="top">
                 <div className="logo">
                     <img src="./assest/logo.png" alt="" width="100%" />
                 </div>
                 <div className="toggle" onClick={change}>
                     {changeToggle ? (
-                        <img src="./assest/toggle.svg" alt="" />
-                    ) : (
                         <img src="./assest/closeToggle.svg" alt="" width='50%' />
+                    ) : (
+                        <img src="./assest/toggle.svg" alt="" />
                     )}
                 </div>
             </div>
