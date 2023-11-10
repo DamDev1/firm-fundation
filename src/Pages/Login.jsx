@@ -21,7 +21,9 @@ export default function Login() {
             <span className='forget-password'>
               <Link>Forgot your password?</Link>
             </span>
-            <button>SIGN IN</button>
+            <button>
+              <Link to='/' style={{color: "white", textDecoration: "none"}}>SIGN IN</Link>
+            </button>
           </form>
 
           <p>© 2021 Firm Foundation School Management</p>

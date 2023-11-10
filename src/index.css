@@ -42,6 +42,38 @@ input {
   border-bottom: 1px solid rgba(226, 225, 225, 0.192);
 }
 
+.sidebar .sidebar-links span .dropdown-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1.5rem;
+}
+
+.sidebar .sidebar-links span.dropdowns{
+  flex-direction: column;
+  padding: 0;
+}
+.dropdown{
+  background: rgba(43, 64, 209, 0.80);
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.dropdown .main-dropdown{
+  margin-left: 1.5rem;
+  display: flex;
+  gap: 10px;
+}
+
+.removeDrop{
+  display: none;
+}
+
+.sidebar .sidebar-links span .drop{
+  margin-left: 3rem;
+}
 .toggle{
   cursor: pointer;
 }
@@ -67,6 +99,7 @@ input {
   padding: 1rem;
 }
 
+
 .active-sidebar .sidebar-links {
   display: flex;
   flex-direction: column;
@@ -84,6 +117,17 @@ input {
   border-bottom: 1px solid rgba(226, 225, 225, 0.192);
 }
 
+.active-sidebar .sidebar-links span.dropdowns .dropdown{
+  display: none;
+}
+
+.active-sidebar .sidebar-links span.dropdowns .dropdown-container a{
+  display: none;
+}
+
+.active-sidebar .sidebar-links span .drop{
+  display: none ;
+}
 
 .active-sidebar .sidebar-links span a{
   opacity: 0;
