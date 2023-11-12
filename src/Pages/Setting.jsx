@@ -1,10 +1,18 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import Select from "react-select";
 import "bootstrap/dist/css/bootstrap.css";
 
-let indicatorVar = ">";
-
 export default function Setting() {
+  let indicatorVar = ">";
+
+  const languageOptions = [
+    { value: "english", label: "English" },
+    { value: "spanish", label: "Spanish" },
+    { value: "french", label: "French" },
+    // Add more options as needed
+  ];
+
   return (
     <Container fluid id="settings">
       <Container fluid id="firstSettingHeaderDiv">
@@ -35,7 +43,45 @@ export default function Setting() {
         <h6>Prince Rahul John - Admin</h6>
       </Container>
       <Container fluid id="settingsUserDetails">
-
+        <Container id="settingInputFields">
+          <h6>School Name *</h6>
+          <input type="text" placeholder="Firm Foundation-Accra" readOnly />
+        </Container>
+        <Container id="settingInputFields">
+          <h6>Email *</h6>
+          <input type="text" placeholder="John@gmail.com" readOnly />
+        </Container>
+        <Container id="settingInputFields">
+          <h6>Mobile NO *</h6>
+          <input type="text" placeholder="091732812902" readOnly />
+        </Container>
+        <Container id="settingInputFields">
+          <h6>City *</h6>
+          <input type="text" placeholder="Accra" readOnly />
+        </Container>
+        <Container id="settingInputFields">
+          <h6>Address *</h6>
+          <input type="text" placeholder="Greater-Accra" readOnly />
+        </Container>
+        <Container id="settingInputFields">
+          <h6>Username *</h6>
+          <input type="text" placeholder="Prince Rahul John" readOnly />
+        </Container>
+        <Container id="settingInputFields">
+          <h6>Password *</h6>
+          <input type="text" placeholder="***********" readOnly />
+        </Container>
+        <Container id="settingInputFields">
+          <label>Select a language:</label>
+          <Select
+            options={languageOptions}
+            isSearchable={false} // Remove this line if you want a searchable dropdown
+            id="settingsSelectTag"
+          />
+        </Container>
+        <Container id="settingsSaveBtnDiv">
+          <button className="btn btn-danger">Save</button>
+        </Container>
       </Container>
     </Container>
   );
