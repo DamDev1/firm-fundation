@@ -1,5 +1,6 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromChildren } from 'react-router-dom';
 import './App.css';
+import "./Pages/css/settings.css";
 import Login from './Pages/Login';
 import Layout from './Layout/Layout';
 import Dashboard from './Pages/Dashboard';

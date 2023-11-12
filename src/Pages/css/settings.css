@@ -1,0 +1,128 @@
+#settings {
+  background-color: #f0f1f3;
+  height: auto;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#firstSettingHeaderDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5em;
+}
+#firstSettingHeaderDiv h1 {
+  color: #000000;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+#firstSettingHeaderDiv h1::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #d60a0b; /* You can customize the line style */
+  margin-bottom: 4px; /* Adjust the spacing between text and line as needed */
+  width: 2em;
+}
+#settingsIndicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#settingsIndicator h1 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #494949;
+}
+#settingsIndicator #colored {
+  color: #d60a0b;
+}
+#settingsImageProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15em;
+  position: relative;
+  width: 100%;
+  margin: 0 auto; /* Center the container */
+}
+#settingsImageProfile #coverPhotoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 14em;
+  background: url(https://as1.ftcdn.net/v2/jpg/02/57/83/56/1000_F_257835624_CoN9LfCetpZGV15jWuaUs3POJraYdgyg.jpg);
+}
+#profilePictureDiv {
+  z-index: 1000;
+}
+#profilePictureDiv img {
+  border-radius: 100%;
+  -webkit-user-drag: none;
+  height: 14em;
+  width: 14em;
+  position: absolute;
+  top: 75%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff; /* Optional: Add a border around the profile picture */
+  border-radius: 50%; /* Ensure the profile picture is circular */
+}
+#settingAccountName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3em;
+  margin-top: 5%;
+}
+#settingAccountName h6 {
+  color: #000000;
+  font-size: 1.1em;
+}
+#settingsUserDetails {
+  background-color: #ffffff;
+  height: 2em;
+  border: 1px solid #333;
+}
+/* Screens Lower than 1000px */
+@media (max-width: 1000px) {
+  #settings {
+    overflow-x: none;
+  }
+  #settingsImageProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    position: relative;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+  }
+  #profilePictureDiv img {
+    border-radius: 100%;
+    -webkit-user-drag: none;
+    height: 10em;
+    width: 10em;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff; /* Optional: Add a border around the profile picture */
+    border-radius: 50%; /* Ensure the profile picture is circular */
+  }
+  #settingAccountName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    margin-top: 10%;
+  }
+  #settingAccountName h6 {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+}

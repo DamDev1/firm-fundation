@@ -40,41 +40,42 @@ input {
   align-items: center;
   gap: 10px;
   border-bottom: 1px solid rgba(226, 225, 225, 0.192);
+  /* height: 4em; */
 }
 
-.sidebar .sidebar-links span .dropdown-container{
+.sidebar .sidebar-links span .dropdown-container {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 1.5rem;
 }
 
-.sidebar .sidebar-links span.dropdowns{
+.sidebar .sidebar-links span.dropdowns {
   flex-direction: column;
   padding: 0;
 }
-.dropdown{
-  background: rgba(43, 64, 209, 0.80);
+.dropdown {
+  background: rgba(43, 64, 209, 0.8);
   width: 100%;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.dropdown .main-dropdown{
+.dropdown .main-dropdown {
   margin-left: 1.5rem;
   display: flex;
   gap: 10px;
 }
 
-.removeDrop{
+.removeDrop {
   display: none;
 }
 
-.sidebar .sidebar-links span .drop{
+.sidebar .sidebar-links span .drop {
   margin-left: 3rem;
 }
-.toggle{
+.toggle {
   cursor: pointer;
 }
 
@@ -84,7 +85,7 @@ input {
   text-decoration: none;
 }
 
-.active-sidebar{
+.active-sidebar {
   background: rgba(20, 35, 138, 1);
   width: 4.5rem;
   height: 100vh;
@@ -99,13 +100,12 @@ input {
   padding: 1rem;
 }
 
-
 .active-sidebar .sidebar-links {
   display: flex;
   flex-direction: column;
 }
 
-.active-sidebar .top .logo{
+.active-sidebar .top .logo {
   display: none;
 }
 
@@ -117,26 +117,24 @@ input {
   border-bottom: 1px solid rgba(226, 225, 225, 0.192);
 }
 
-.active-sidebar .sidebar-links span.dropdowns .dropdown{
+.active-sidebar .sidebar-links span.dropdowns .dropdown {
   display: none;
 }
 
-.active-sidebar .sidebar-links span.dropdowns .dropdown-container a{
+.active-sidebar .sidebar-links span.dropdowns .dropdown-container a {
   display: none;
 }
 
-.active-sidebar .sidebar-links span .drop{
-  display: none ;
+.active-sidebar .sidebar-links span .drop {
+  display: none;
 }
 
-.active-sidebar .sidebar-links span a{
+.active-sidebar .sidebar-links span a {
   opacity: 0;
   transition: 0.5s;
   color: white;
   text-decoration: none;
 }
-
-
 
 /* -------------------------------HEADER STYLE  */
 header nav {
@@ -165,7 +163,7 @@ header nav .nav-right {
 .line {
   width: 2px;
   height: 25px;
-  background: #D60A0B;
+  background: #d60a0b;
 }
 header nav .nav-right .user .userProfile {
   width: 30px;
@@ -177,10 +175,8 @@ header nav .nav-right .user .userProfile {
   border-radius: 50%;
 }
 
-
-
-@media(max-width: 390px){
-  header nav{
+@media (max-width: 390px) {
+  header nav {
     padding: 0;
     height: 4rem;
     display: grid;
